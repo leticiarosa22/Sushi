@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    //receber dados do usuario
+    //parseInt para inteiros
+    //parseFloat para reais
+    //number caso o tipo de numero seja indiferente
+    let n1 = parseFloat(prompt("Digite n1: "));
+    let n2 = Number(prompt("Digite n2: "));
+    //calcular a media
+    let media = (n1+n2)/2;
+    //exibir a media
+    alert ("media:" + media.toFixed(2))
+    //estrutura condicional
+    //com o senao se else if
+    if(media<5){
+        alert ("Reprovado");
+    }else if(media<8){ 
+        alert ("Aprovado");
+    }else{
+      alert ("Aprovado com distinção");
+    }
+</script>
