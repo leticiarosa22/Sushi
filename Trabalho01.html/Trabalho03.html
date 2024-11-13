@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+    let codigo = parseInt(prompt("qual produto deseja ver? 1 a 4")); 
+    if(isNaN(codigo) || !Number.isInteger(Number(codigo)) || codigo < 1 || codigo > 4) 
+    {
+       console.log("Insira um código válido entre 1 e 4.");
+    }
+    else{
+    let classificacao;
+    switch (codigo)
+    {
+        case 1:
+            classificacao = "alimento não perecível";
+            break;
+        case 2:
+            classificacao = "alimento perecível";
+            break;
+        case 3:
+            classificacao = "vestuário";
+            break;
+        case 4:
+            classificacao = "limpeza";
+            break;
+            default:
+            classificacao = "codigo invalido"; 
+    }
+    console.log(`classificacao: ${classificacao}`);
+}       
+</script>
