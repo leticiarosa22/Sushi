@@ -1,0 +1,31 @@
+meta charset="UTF-8">
+<script>
+    let n = parseInt(prompt("Digite o codigo do seu produto: \n 1: pão francês \n 2: mortadela \n 3: muçarela \n 4: sonho \n 5: pão de forma"))
+   
+    switch(n){
+        case 1:
+            let quantidade = parseInt(prompt("Digite quantos unidades você comprou? "))
+            alert(`O valor total de ${quantidade} pães franceses é ${quantidade * 0.20}`)
+            break
+        case 2:
+        let quantidade1  = parseInt(prompt("Digite quantos unidades você comprou? "))
+            alert(`O valor total de ${quantidade} mortadela é ${quantidade * 3.00}`)
+            break
+        case 3:
+        let quantidade2 = parseInt(prompt("Digite quantos unidades você comprou? "))
+            alert(`O valor total de ${quantidade} muçarela é ${quantidade * 3.50}`)
+            break
+        case 4:
+        let quantidade3 = parseInt(prompt("Digite quantos unidades você comprou? "))
+            alert(`O valor total de ${quantidade} sonhos é ${quantidade * 5.50}`)
+            break
+        case 5:
+        let quantidade4 = parseInt(prompt("Digite quantos unidades você comprou? "))
+            alert(`O valor total de ${quantidade} pão de forma é ${quantidade * 6.00}`)
+            break
+        default:
+            alert("invalido")
+            break
+    }
+ 
+</script>
